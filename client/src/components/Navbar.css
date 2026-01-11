@@ -84,6 +84,28 @@
   gap: 1rem;
 }
 
+.profile-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  color: #a0aec0;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.profile-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.profile-link.active {
+  color: #fff;
+  background: linear-gradient(135deg, #fc4c02, #ff7043);
+}
+
 .user-name {
   color: #a0aec0;
   font-weight: 500;

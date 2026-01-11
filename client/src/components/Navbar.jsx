@@ -12,10 +12,11 @@ function Navbar({ userName }) {
 
     const navLinks = [
         { path: "/dashboard", label: "Dashboard", icon: <FiHome /> },
-        { path: "/profile", label: "Profile", icon: <FiUser /> },
         { path: "/activities", label: "Activities", icon: <FiActivity /> },
         { path: "/personal-best", label: "Personal Best", icon: <FiAward /> },
     ];
+
+    const profileLink = { path: "/profile", label: "Profile", icon: <FiUser /> };
 
     const handleLogout = async () => {
         try {
@@ -56,6 +57,13 @@ function Navbar({ userName }) {
             </ul>
 
             <div className="navbar-user">
+                <Link
+                    to={`${profileLink.path}?userId=${userId}`}
+                    className={`profile-link ${location.pathname === profileLink.path ? "active" : ""}`}
+                >
+                    <span className="nav-icon">{profileLink.icon}</span>
+                    {profileLink.label}
+                </Link>
                 {userName && <span className="user-name">{userName}</span>}
                 <button onClick={handleLogout} className="logout-btn">
                     <FiLogOut style={{ marginRight: "4px" }} />
