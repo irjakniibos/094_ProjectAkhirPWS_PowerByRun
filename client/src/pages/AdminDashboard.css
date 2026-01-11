@@ -1,0 +1,434 @@
+.admin-layout {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
+}
+
+.admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(79, 70, 229, 0.1);
+    border-bottom: 1px solid rgba(79, 70, 229, 0.2);
+}
+
+.admin-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #818cf8;
+}
+
+.admin-brand .brand-logo {
+    width: 48px;
+    height: 48px;
+    display: block;
+}
+
+.admin-brand-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: inline;
+}
+
+.admin-brand-name .power,
+.admin-brand-name .by,
+.admin-brand-name .run {
+    background: linear-gradient(90deg, #fc4c02, #ff7043);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.admin-nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.admin-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #a0aec0;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 59, 48, 0.2);
+    color: #ff6b6b;
+    border: 1px solid rgba(255, 59, 48, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: rgba(255, 59, 48, 0.4);
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.admin-container h1 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.admin-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.admin-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(79, 70, 229, 0.1);
+    border: 1px solid rgba(79, 70, 229, 0.2);
+    border-radius: 16px;
+}
+
+.admin-stat-card .stat-icon {
+    font-size: 2.5rem;
+    color: #818cf8;
+    display: flex;
+    align-items: center;
+}
+
+.admin-stat-card .stat-icon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.admin-stat-card .stat-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #818cf8;
+}
+
+.admin-stat-card .stat-label {
+    color: #a0aec0;
+    font-size: 0.875rem;
+}
+
+.admin-section {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.admin-section h2 {
+    font-size: 1.125rem;
+    margin: 0 0 1.25rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-icon {
+    color: #818cf8;
+}
+
+.users-table-container {
+    overflow-x: auto;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+    padding: 0.875rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.users-table th {
+    color: #a0aec0;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.users-table td {
+    font-size: 0.875rem;
+}
+
+.view-logs-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    background: rgba(79, 70, 229, 0.2);
+    color: #818cf8;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.view-logs-btn:hover {
+    background: rgba(79, 70, 229, 0.4);
+}
+
+.recent-logs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.log-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.log-action {
+    padding: 0.25rem 0.5rem;
+    background: rgba(79, 70, 229, 0.2);
+    color: #818cf8;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.log-user {
+    flex: 1;
+    color: #fff;
+}
+
+.log-time {
+    color: #718096;
+    font-size: 0.75rem;
+}
+
+.active-users {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.active-user-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.rank {
+    font-weight: 700;
+    color: #fbbf24;
+}
+
+.user-name {
+    flex: 1;
+}
+
+.activity-count {
+    color: #4ade80;
+    font-size: 0.875rem;
+}
+
+.no-data {
+    text-align: center;
+    color: #718096;
+    padding: 1rem;
+}
+
+.loading-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-top-color: #818cf8;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* User Logs Page Styles */
+.user-logs-header {
+    margin-bottom: 2rem;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(79, 70, 229, 0.2);
+    color: #818cf8;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.back-btn:hover {
+    background: rgba(79, 70, 229, 0.4);
+}
+
+.user-logs-header h1 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-icon {
+    color: #818cf8;
+}
+
+.user-info-subtitle {
+    color: #a0aec0;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.logs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.log-entry {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.log-entry:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateX(4px);
+}
+
+.log-action-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    min-width: 80px;
+    justify-content: center;
+}
+
+.action-login {
+    background: rgba(74, 222, 128, 0.2);
+    color: #4ade80;
+}
+
+.action-sync {
+    background: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+}
+
+.action-logout {
+    background: rgba(251, 146, 60, 0.2);
+    color: #fb923c;
+}
+
+.action-default {
+    background: rgba(79, 70, 229, 0.2);
+    color: #818cf8;
+}
+
+.log-details {
+    flex: 1;
+    color: #e2e8f0;
+    font-size: 0.875rem;
+}
+
+.log-timestamp {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    color: #718096;
+    font-size: 0.75rem;
+}
+
+/* Section Header Row */
+.section-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section-header-row h2 {
+    margin: 0;
+}
+
+.refresh-logs-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.refresh-logs-btn:hover:not(:disabled) {
+    background: rgba(59, 130, 246, 0.4);
+}
+
+.refresh-logs-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.refresh-logs-btn.spinning svg {
+    animation: spin 1s linear infinite;
+}
