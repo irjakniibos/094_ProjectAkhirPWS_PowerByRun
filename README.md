@@ -1,4 +1,4 @@
-# 🏃 POWERBYRUN - Strava Dashboard
+# 🏃 POWERBYRUN - Dashboard Performa
 
 A full-stack web application that integrates with the **Strava API** to display and analyze running activities. Built with React (Vite) for the frontend and Express.js with MySQL for the backend.
 
